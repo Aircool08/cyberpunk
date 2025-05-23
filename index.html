@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cyberpunk 2077</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h1 {
+                font-size: 50px;
+                text-align: center;
+                font-family: Anurati;
+                transition: background-color 0.3s, transform 0.3s;
+            }
+            a{
+                align-items: center;
+            }
+            /* Center image */
+            .center-img {
+                display: block;
+                margin: 0 auto;
+                width: 40%;
+            }
+            /* Center the buttons horizontally with flex */
+            .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                font-family: Roboto;
+            }
+
+            body, html { 
+                height: 100%; margin: 0; 
+            }
+            .video-bg {
+                position: fixed;
+                 top:0; left:0;
+                 min-width:100vw; min-height:100vh;
+                 object-fit: cover;
+                 z-index: -1;
+            }
+
+            .content {
+                 position: relative;
+                  z-index: 1;
+                  color: white;
+                 text-align: center;
+                 margin-top: 40vh;
+            }
+
+        </style>
+    </head>
+    <body>
+        <video class="video-bg" autoplay muted loop>
+    <source src="videos/background.mp4" type="video/mp4">
+    <!-- <source src="video.webm" type="video/webm"> -->
+    Your browser does not support the video tag.
+  </video>
+        <img src="images/text.png" alt="Cyberpunk 2077" class="center-img"> <br>
+
+        <div class="buttons"; style="display: flex; gap: 30px; font-family: Roboto;" align="center">
+            <a href="#" class="cyberpunk-button">Map</a>
+            <a href="#" class="cyberpunk-button">Characters</a>
+            <a href="#" class="cyberpunk-button">Welcome Site (This)</a>
+            <a href="#" class="cyberpunk-button">Storyline</a>
+            <a href="#" class="cyberpunk-button">Guns</a>
+        </div> <br>
+    <div class="container">
+        <section class="text">
+            <h2>Welcome to the Cyberpunk 2077 Universe</h2>
+            <p>Explore the world of Night City, meet its characters, and discover the best guns.</p>
+        </section>
+    </div>
+
+    </body>
+</html>
