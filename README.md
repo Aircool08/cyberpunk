@@ -1,2 +1,2 @@
 # cyberpunk
-Website about Cyberpunk 2077
+A Website about Cyberpunk 2077 that i made for school
