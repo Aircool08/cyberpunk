@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Xirod';
   src: url('../fonts/Xirod.woff');
@@ -11,12 +12,35 @@
   font-style: normal;
 }
 
+
 .button-container {
     text-align: center;
 }
 
+#v-flyin {
+  position: fixed;
+  right: -400px;
+  bottom: 10%;
+  width: 250px;
+  max-width: 40vw;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: right 0.8s cubic-bezier(.77,0,.18,1), opacity 0.8s;
+}
+
+#v-flyin.show-v {
+  right: 40px;
+  opacity: 1;
+}
+
+#v-flyin.hide-v {
+  right: -400px;
+  opacity: 0;
+}
+
 p {
-        font-family: Xirod;
+        
         font-size: 15px;
 }
 

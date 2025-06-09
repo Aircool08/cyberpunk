@@ -46,6 +46,26 @@
                  margin-top: 40vh;
             }
 
+                table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #00ff99;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #111111;
+      color: #00ffff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
         </style>
     </head>
     <body>
@@ -66,17 +86,157 @@
 
     <div class="container">
         <section class="text">
-            <h2>Guns in Cyberpunk 2077</h2>
-            <p>:D</p>
+            <h1>Weapons in <em>Cyberpunk 2077</em></h1>
+
+            <p>
+                In <em>Cyberpunk 2077</em>, weapons play a central role in combat, allowing players to adapt their playstyle to a wide variety of challenges. From smart targeting systems to old-school revolvers, the game offers a vast arsenal, each with its own mechanics, lore, and unique feel.
+            </p>
+
+            <p>
+                Weapons are divided into three main categories:
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+                <ol style="text-align: left; counter-reset: item;">
+                    <li style="color: red;"><strong><a href="https://cyberpunk.fandom.com/wiki/Power_Weapons" style="color: red;" target="_blank">Power Weapons</a></strong> <br> These are the most conventional weapons and use traditional ballistic technology.</li>
+                    <li style="color: orange;"><strong><a href="https://cyberpunk.fandom.com/wiki/Tech_Weapons" style="color: orange;" target="_blank">Tech Weapons</a></strong>  <br> These weapons use electromagnetic technology to fire projectiles at extreme speeds.</li>
+                    <li style="color: #00ffff;"><strong><a href="https://cyberpunk.fandom.com/wiki/Smart_Weapons" style="color: #00ffff;" target="_blank">Smart Weapons</a></strong> <br> These weapons track enemies and automatically shoot at them.</li>
+                </ol>
+            </div>
+
+            <p>
+                In addition to these categories, there are <strong>Iconic Weapons</strong>—rare, named guns with special abilities or designs. 
+            </p>
+
+            <p>
+                Weapon customization is also a key feature. Players can modify guns with attachments like scopes, silencers, and software upgrades to match their build and mission needs.
+            </p>
+
+            <p>
+                Whether you're a stealth hacker or a full-auto street samurai, <em>Cyberpunk 2077</em> ensures that the right weapon is always within reach—if you can find it.
+            </p>
         </section>
+    </div>
+
+    <div>
+    <!-- V Fly-in Image -->
+    <img id="v-flyin" src="images/v.png" alt="V" style="position:fixed; right:0; bottom:0; width:20vw; height:auto; max-height:60vh; z-index:10; transition:transform 0.5s, opacity 0.5s;" />
+    <script>
+        const vImg = document.getElementById('v-flyin');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY || window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const atBottom = (scrollY + winHeight) >= (docHeight - 10); // 10px tolerance
+
+            if (scrollY > 0 && !atBottom) {
+                vImg.classList.add('show-v');
+                vImg.classList.remove('hide-v');
+            } else {
+                vImg.classList.remove('show-v');
+                vImg.classList.add('hide-v');
+            }
+        });
+
+        // Optional: Show image by default if needed
+        vImg.classList.add('hide-v');
+    </script>
+    <style>
+        #v-flyin.hide-v {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(100px) scale(1.1);
+        }
+        #v-flyin.show-v {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1.1);
+        }
+    </style>
+    </div>
+
+
+    <div class="container">
+        <section class="text">
+            <h2>Some Known Guns</h2>
+            <table>
+    <tr>
+      <th>Name</th>
+      <th>Typ</th>
+    </tr>
+
+    <!-- Pistolen -->
+    <tr><td>Liberty</td><td>Pistole</td></tr>
+    <tr><td>Unity</td><td>Pistole</td></tr>
+    <tr><td>Lexington</td><td>Pistole</td></tr>
+    <tr><td>Nue</td><td>Pistole</td></tr>
+    <tr><td>Lizzie</td><td>Pistole</td></tr>
+    <tr><td>Chaos</td><td>Pistole</td></tr>
+    <tr><td>Skippy</td><td>Pistole</td></tr>
+    <tr><td>Malorian Arms 3516</td><td>Pistole</td></tr>
+
+    <!-- SMGs -->
+    <tr><td>Grad</td><td>SMG</td></tr>
+    <tr><td>Shingen</td><td>SMG</td></tr>
+    <tr><td>Fenrir</td><td>SMG</td></tr>
+    <tr><td>Psalm 11:6</td><td>SMG</td></tr>
+
+    <!-- Sturmgewehre -->
+    <tr><td>Kyubi</td><td>Sturmgewehr</td></tr>
+    <tr><td>Prejudice</td><td>Sturmgewehr</td></tr>
+    <tr><td>G-58 Dian</td><td>Sturmgewehr</td></tr>
+    <tr><td>Divided We Stand</td><td>Sturmgewehr</td></tr>
+    <tr><td>Moron Labe</td><td>Sturmgewehr</td></tr>
+    <tr><td>Sovereign</td><td>Sturmgewehr</td></tr>
+
+    <!-- Scharfschützen -->
+    <tr><td>Nekomata</td><td>Scharfschütze</td></tr>
+    <tr><td>Overwatch</td><td>Scharfschütze</td></tr>
+    <tr><td>Breakthrough</td><td>Scharfschütze</td></tr>
+
+    <!-- Schrotflinten -->
+    <tr><td>M2038 Tactician</td><td>Schrotflinte</td></tr>
+
+  </table>
+
+
+        </section>
+    </div>
+
     </div>
 
     <div class="container">
         <section class="text">
-            <h2>Pistols</h2>
-            <p>:D</p>
+            <h2>Weapon Manufacturers</h2>
+            <p>
+                In Night City, several major corporations and underground groups produce the weapons you find on the streets. Each manufacturer has its own style, technology, and reputation.
+            </p>
+            <ul>
+                <li><strong>Arasaka</strong> – High-tech, reliable, and favored by corpo security.</li>
+                <li><strong>Militech</strong> – Military-grade firepower, often used by mercenaries.</li>
+                <li><strong>Kang Tao</strong> – Specializes in smart weaponry and advanced targeting systems.</li>
+                <li><strong>Budget Arms</strong> – Cheap, mass-produced guns for the masses.</li>
+                <li><strong>Tsunami Defense Systems</strong> – Known for powerful sniper rifles and shotguns.</li>
+            </ul>
         </section>
     </div>
+
+    <!-- SKIPPY -->
+    </div>
+
+    <div class="container">
+        <section class="text">
+            <h2>A Known Gun: SKIPPY</h2>
+            <p>
+                Skippy is a unique smart pistol in Cyberpunk 2077, known for its talking AI and quirky personality. It automatically targets enemies and offers two firing modes: "Puppy-Loving Pacifist" (aims for legs) and "Stone Cold Killer" (aims for heads). Skippy is both a powerful weapon and a memorable companion during your journey in Night City.
+            </p>
+            <a href="images/skippy.png" target="_blank">
+                <img src="images/skippy.png" alt="Skippy Smart Pistol" style="display:block; margin:20px auto; max-width:300px; width:100%; border:2px solid #00ff99; border-radius:10px;">
+            </a>
+        </section>
+    </div>
+
+
 
 
     </body>
