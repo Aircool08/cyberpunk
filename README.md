@@ -5,8 +5,8 @@ A Website about Cyberpunk 2077 that i made for school
 - comments✅
 - h1, p✅
 - folders✅
-- hyperlinks/email
-- tabele
-- lists
+- hyperlinks/email✅
+- tabele✅
+- lists✅
 
 
