@@ -16,8 +16,33 @@
   font-style: normal;
 }
 
+a {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Center image */
+.center-img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+/* Center the buttons horizontally with flex */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: Roboto;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 .button-container {
-    text-align: center;
+  text-align: center;
 }
 
 p {

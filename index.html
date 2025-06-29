@@ -14,41 +14,7 @@
                 font-family: Anurati;
                 transition: background-color 0.3s, transform 0.3s;
             }
-            a{
-                align-items: center;
-            }
-            /* Center image */
-            .center-img {
-                display: block;
-                margin: 0 auto;
-                width: 40%;
-            }
-            /* Center the buttons horizontally with flex */
-            .buttons {
-                display: flex;
-                justify-content: center;
-                gap: 30px;
-                font-family: Roboto;
-            }
-
-            body, html { 
-                height: 100%; margin: 0; 
-            }
-            .video-bg {
-                position: fixed;
-                 top:0; left:0;
-                 min-width:100vw; min-height:100vh;
-                 object-fit: cover;
-                 z-index: -1;
-            }
-
-            .content {
-                 position: relative;
-                  z-index: 1;
-                  color: white;
-                 text-align: center;
-                 margin-top: 40vh;
-            }
+            
 
         </style>
     </head>
@@ -90,8 +56,8 @@
     <div class="container">
         <section class="text">
             <h2>
-                <a href="https://cyberpunk.fandom.com/wiki/Night_City" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
-                    NIGHT CITY
+                <a href="https://cyberpunk.fandom.com/wiki/Night_City" target="_blank" rel="noopener noreferrer" style="color: #00ffe7; text-decoration: none; display: inline-block; padding: 10px 30px; border: 2px solid #00ffe7; border-radius: 12px; background: rgba(0,0,0,0.5); box-shadow: 0 0 18px #00ffe7, 0 0 8px #ff00cc inset; transition: transform 0.2s, box-shadow 0.2s;">
+                    <span style="letter-spacing: 0.25em; font-family: 'Anurati', 'Xirod', sans-serif; font-size: 1.1em; text-shadow: 0 0 8px #00ffe7, 0 0 2px #fff;">NIGHT CITY</span>
                 </a>
             </h2>
             <!--
@@ -99,7 +65,13 @@
 #            Aufgabe 1, Abstatz
             
             -->
-            <p style="font-size: 1.2em;">Night City is a sprawling, neon-lit metropolis at the heart of Cyberpunk 2077. Known for its towering skyscrapers, bustling streets, and vibrant nightlife, the city is a hub of technology, opportunity, and danger. In this world, mega-corporations hold immense power, and every corner hides a story of ambition, betrayal, or survival. As V, players navigate the city's diverse districts, interact with unforgettable characters, and shape their own destiny in a society where cybernetic enhancements and high-tech weaponry are the norm. Night City never sleeps, offering endless possibilities and challenges for those daring enough to chase their dreams.</p>
+            <!-- Using font from CDN for Xirod because it's not included in style.css and ensures the font loads directly from a reliable external source -->
+             
+            <p style="font-size: 1.2em; font-family: 'Xirod', sans-serif;">
+                <span style="font-size: 0.9em;">
+                    Night City is a sprawling, neon-lit metropolis at the heart of Cyberpunk 2077. Known for its towering skyscrapers, bustling streets, and vibrant nightlife, the city is a hub of technology, opportunity, and danger. In this world, mega-corporations hold immense power, and every corner hides a story of ambition, betrayal, or survival. As V, players navigate the city's diverse districts, interact with unforgettable characters, and shape their own destiny in a society where cybernetic enhancements and high-tech weaponry are the norm. Night City never sleeps, offering endless possibilities and challenges for those daring enough to chase their dreams.
+                </span></span>
+            </p>
         </section>
     </div>
 

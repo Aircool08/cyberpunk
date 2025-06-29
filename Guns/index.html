@@ -138,7 +138,7 @@
             }
         });
 
-        // Optional: Show image by default if needed
+        // Javascript insiide the file for faster performance.
         vImg.classList.add('hide-v');
     </script>
     <style>
@@ -164,38 +164,39 @@
       <th>Name</th>
       <th>Typ</th>
     </tr>
-
     <!-- Pistolen -->
     <tr><td>Liberty</td><td>Pistole</td></tr>
-    <tr><td>Unity</td><td>Pistole</td></tr>
-    <tr><td>Lexington</td><td>Pistole</td></tr>
-    <tr><td>Nue</td><td>Pistole</td></tr>
-    <tr><td>Lizzie</td><td>Pistole</td></tr>
-    <tr><td>Chaos</td><td>Pistole</td></tr>
-    <tr><td>Skippy</td><td>Pistole</td></tr>
-    <tr><td>Malorian Arms 3516</td><td>Pistole</td></tr>
-
     <!-- SMGs -->
     <tr><td>Grad</td><td>SMG</td></tr>
-    <tr><td>Shingen</td><td>SMG</td></tr>
-    <tr><td>Fenrir</td><td>SMG</td></tr>
-    <tr><td>Psalm 11:6</td><td>SMG</td></tr>
-
     <!-- Sturmgewehre -->
     <tr><td>Kyubi</td><td>Sturmgewehr</td></tr>
-    <tr><td>Prejudice</td><td>Sturmgewehr</td></tr>
-    <tr><td>G-58 Dian</td><td>Sturmgewehr</td></tr>
-    <tr><td>Divided We Stand</td><td>Sturmgewehr</td></tr>
-    <tr><td>Moron Labe</td><td>Sturmgewehr</td></tr>
-    <tr><td>Sovereign</td><td>Sturmgewehr</td></tr>
-
     <!-- Scharfschützen -->
     <tr><td>Nekomata</td><td>Scharfschütze</td></tr>
-    <tr><td>Overwatch</td><td>Scharfschütze</td></tr>
-    <tr><td>Breakthrough</td><td>Scharfschütze</td></tr>
-
     <!-- Schrotflinten -->
     <tr><td>M2038 Tactician</td><td>Schrotflinte</td></tr>
+
+    <tr><td>Unity</td><td>Pistole</td></tr>
+    <tr><td>Shingen</td><td>SMG</td></tr>
+    <tr><td>Prejudice</td><td>Sturmgewehr</td></tr>
+    <tr><td>Overwatch</td><td>Scharfschütze</td></tr>
+
+    <tr><td>Lexington</td><td>Pistole</td></tr>
+    <tr><td>Fenrir</td><td>SMG</td></tr>
+    <tr><td>G-58 Dian</td><td>Sturmgewehr</td></tr>
+    <tr><td>Breakthrough</td><td>Scharfschütze</td></tr>
+
+    <tr><td>Nue</td><td>Pistole</td></tr>
+    <tr><td>Psalm 11:6</td><td>SMG</td></tr>
+    <tr><td>Divided We Stand</td><td>Sturmgewehr</td></tr>
+
+    <tr><td>Lizzie</td><td>Pistole</td></tr>
+    <tr><td>Moron Labe</td><td>Sturmgewehr</td></tr>
+
+    <tr><td>Chaos</td><td>Pistole</td></tr>
+    <tr><td>Sovereign</td><td>Sturmgewehr</td></tr>
+
+    <tr><td>Skippy</td><td>Pistole</td></tr>
+    <tr><td>Malorian Arms 3516</td><td>Pistole</td></tr>
 
   </table>
 
@@ -207,16 +208,26 @@
 
     <div class="container">
         <section class="text">
-            <h2>Weapon Manufacturers</h2>
-            <p>
+            <h2 style="color:#00ffff; letter-spacing:2px; text-shadow:0 0 8px #00ffff, 0 0 2px #fff;">Weapon Manufacturers</h2>
+            <p style="font-size:1.15em; color:#e0e0e0;">
                 In Night City, several major corporations and underground groups produce the weapons you find on the streets. Each manufacturer has its own style, technology, and reputation.
             </p>
-            <ul>
-                <li><strong>Arasaka</strong> – High-tech, reliable, and favored by corpo security.</li>
-                <li><strong>Militech</strong> – Military-grade firepower, often used by mercenaries.</li>
-                <li><strong>Kang Tao</strong> – Specializes in smart weaponry and advanced targeting systems.</li>
-                <li><strong>Budget Arms</strong> – Cheap, mass-produced guns for the masses.</li>
-                <li><strong>Tsunami Defense Systems</strong> – Known for powerful sniper rifles and shotguns.</li>
+            <ul style="list-style:none; padding:0; max-width:500px; margin:30px auto 0 auto;">
+                <li style="background:rgba(0,255,153,0.08); border-left:4px solid #00ff99; margin-bottom:15px; padding:15px 20px; border-radius:8px;">
+                    <strong style="color:#ff0055;">Arasaka</strong> – <span style="color:#b3ffe0;">High-tech, reliable, and favored by corpo security.</span>
+                </li>
+                <li style="background:rgba(255,0,85,0.08); border-left:4px solid #ff0055; margin-bottom:15px; padding:15px 20px; border-radius:8px;">
+                    <strong style="color:#ffae00;">Militech</strong> – <span style="color:#ffe0b3;">Military-grade firepower, often used by mercenaries.</span>
+                </li>
+                <li style="background:rgba(0,255,255,0.08); border-left:4px solid #00ffff; margin-bottom:15px; padding:15px 20px; border-radius:8px;">
+                    <strong style="color:#00ffff;">Kang Tao</strong> – <span style="color:#b3e6ff;">Specializes in smart weaponry and advanced targeting systems.</span>
+                </li>
+                <li style="background:rgba(255,255,0,0.08); border-left:4px solid #ffee00; margin-bottom:15px; padding:15px 20px; border-radius:8px;">
+                    <strong style="color:#ffee00;">Budget Arms</strong> – <span style="color:#fff9b3;">Cheap, mass-produced guns for the masses.</span>
+                </li>
+                <li style="background:rgba(255,0,255,0.08); border-left:4px solid #ff00ff; margin-bottom:15px; padding:15px 20px; border-radius:8px;">
+                    <strong style="color:#ff00ff;">Tsunami Defense Systems</strong> – <span style="color:#f3b3ff;">Known for powerful sniper rifles and shotguns.</span>
+                </li>
             </ul>
         </section>
     </div>
