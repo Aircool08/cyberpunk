@@ -76,8 +76,13 @@
     Your browser does not support the video tag.
   </video>
         <img src="images/text.png" alt="Cyberpunk 2077" class="center-img"> <br>
-
-        <div class="buttons"; style="display: flex; gap: 30px; font-family: Roboto;" align="center">
+       <input type="checkbox" id="burger-toggle" />
+    <label class="burger" for="burger-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+        <div class="buttons" align="center">
             <a href="../Map/index.html" class="cyberpunk-button">Map</a>
             <a href="../Characters/index.html" class="cyberpunk-button">Characters</a>
             <a href="../index.html" class="cyberpunk-button">Welcome Site</a>
@@ -160,56 +165,91 @@
     <div class="container">
         <section class="text">
             <h2>Some Known Guns</h2>
-            <table>
-    <tr>
-      <th>Name</th>
-      <th>Typ</th>
-    </tr>
-    <!-- Pistolen -->
-    <tr><td>Liberty</td><td>Pistole</td></tr>
-    <!-- SMGs -->
-    <tr><td>Grad</td><td>SMG</td></tr>
-    <!-- Sturmgewehre -->
-    <tr><td>Kyubi</td><td>Sturmgewehr</td></tr>
-    <!-- Scharfschützen -->
-    <tr><td>Nekomata</td><td>Scharfschütze</td></tr>
-    <!-- Schrotflinten -->
-    <tr><td>M2038 Tactician</td><td>Schrotflinte</td></tr>
-
-    <tr><td>Unity</td><td>Pistole</td></tr>
-    <tr><td>Shingen</td><td>SMG</td></tr>
-    <tr><td>Prejudice</td><td>Sturmgewehr</td></tr>
-    <tr><td>Overwatch</td><td>Scharfschütze</td></tr>
-
-    <tr><td>Lexington</td><td>Pistole</td></tr>
-    <tr><td>Fenrir</td><td>SMG</td></tr>
-    <tr><td>G-58 Dian</td><td>Sturmgewehr</td></tr>
-    <tr><td>Breakthrough</td><td>Scharfschütze</td></tr>
-
-    <tr><td>Nue</td><td>Pistole</td></tr>
-    <tr><td>Psalm 11:6</td><td>SMG</td></tr>
-    <tr><td>Divided We Stand</td><td>Sturmgewehr</td></tr>
-
-    <tr><td>Lizzie</td><td>Pistole</td></tr>
-    <tr><td>Moron Labe</td><td>Sturmgewehr</td></tr>
-
-    <tr><td>Chaos</td><td>Pistole</td></tr>
-    <tr><td>Sovereign</td><td>Sturmgewehr</td></tr>
-
-    <tr><td>Skippy</td><td>Pistole</td></tr>
-    <tr><td>Malorian Arms 3516</td><td>Pistole</td></tr>
-
-  </table>
-
-
+            <div class="responsive-table-wrapper">
+                <table class="responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Typ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Pistolen -->
+                        <tr><td>Liberty</td><td>Pistole</td></tr>
+                        <!-- SMGs -->
+                        <tr><td>Grad</td><td>SMG</td></tr>
+                        <!-- Sturmgewehre -->
+                        <tr><td>Kyubi</td><td>Sturmgewehr</td></tr>
+                        <!-- Scharfschützen -->
+                        <tr><td>Nekomata</td><td>Scharfschütze</td></tr>
+                        <!-- Schrotflinten -->
+                        <tr><td>M2038 Tactician</td><td>Schrotflinte</td></tr>
+                        <tr><td>Unity</td><td>Pistole</td></tr>
+                        <tr><td>Shingen</td><td>SMG</td></tr>
+                        <tr><td>Prejudice</td><td>Sturmgewehr</td></tr>
+                        <tr><td>Overwatch</td><td>Scharfschütze</td></tr>
+                        <tr><td>Lexington</td><td>Pistole</td></tr>
+                        <tr><td>Fenrir</td><td>SMG</td></tr>
+                        <tr><td>G-58 Dian</td><td>Sturmgewehr</td></tr>
+                        <tr><td>Breakthrough</td><td>Scharfschütze</td></tr>
+                        <tr><td>Nue</td><td>Pistole</td></tr>
+                        <tr><td>Psalm 11:6</td><td>SMG</td></tr>
+                        <tr><td>Divided We Stand</td><td>Sturmgewehr</td></tr>
+                        <tr><td>Lizzie</td><td>Pistole</td></tr>
+                        <tr><td>Moron Labe</td><td>Sturmgewehr</td></tr>
+                        <tr><td>Chaos</td><td>Pistole</td></tr>
+                        <tr><td>Sovereign</td><td>Sturmgewehr</td></tr>
+                        <tr><td>Skippy</td><td>Pistole</td></tr>
+                        <tr><td>Malorian Arms 3516</td><td>Pistole</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <style>
+                .responsive-table-wrapper {
+                    width: 100%;
+                    overflow-x: auto;
+                }
+                .responsive-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    min-width: 320px;
+                }
+                @media (max-width: 600px) {
+                    .responsive-table th, .responsive-table td {
+                        padding: 8px 6px;
+                        font-size: 0.95em;
+                    }
+                    .responsive-table th, .responsive-table td {
+                        white-space: nowrap;
+                    }
+                    .responsive-table {
+                        font-size: 0.97em;
+                    }
+                    .container .text h2 {
+                        font-size: 1.1em;
+                    }
+                }
+                @media (max-width: 400px) {
+                    .responsive-table th, .responsive-table td {
+                        padding: 6px 2px;
+                        font-size: 0.9em;
+                    }
+                }
+            </style>
         </section>
-    </div>
-
     </div>
 
     <div class="container">
         <section class="text">
-            <h2 style="color:#00ffff; letter-spacing:2px; text-shadow:0 0 8px #00ffff, 0 0 2px #fff;">Weapon Manufacturers</h2>
+            <h2 class="responsive-heading" style="color:#00ffff; letter-spacing:2px; text-shadow:0 0 8px #00ffff, 0 0 2px #fff;">Weapon Manufacturers</h2>
+            <style>
+            @media (max-width: 600px) {
+                .responsive-heading {
+                    font-size: 1.2em !important;
+                    letter-spacing: 1px !important;
+                }
+            }
+            </style>
             <p style="font-size:1.15em; color:#e0e0e0;">
                 In Night City, several major corporations and underground groups produce the weapons you find on the streets. Each manufacturer has its own style, technology, and reputation.
             </p>
